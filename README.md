@@ -1,4 +1,3 @@
-
 # EX-21-POINTERS
 # AIM:
 Write a C program to convert a 23.65 into 25 using pointer
@@ -21,12 +20,28 @@ int main() {
     return 0;
 }
 ```
+
 ## OUTPUT:
-![Screenshot 2025-04-27 153034](https://github.com/user-attachments/assets/04494f21-459e-4559-889a-bd8cbe17b24d)
+
+
+![image](https://github.com/user-attachments/assets/ef6c609d-ef5a-4c8a-8233-d1bf713dd442)
+
+
+
+
+
+
+
+
+
+
+
 
 ## RESULT:
 Thus the program to convert a 23.65 into 25 using pointer has been executed successfully.
  
+ 
+
 
 # EX-22-FUNCTIONS AND STORAGE CLASS
 
@@ -62,12 +77,17 @@ int main() {
 }
 ```
 ## OUTPUT:
-![Screenshot 2025-04-27 153157](https://github.com/user-attachments/assets/f9b6bfcc-6e11-4fdb-80de-5dbd210335f8)
 
+![image](https://github.com/user-attachments/assets/e573e6c8-b0e8-4d76-a486-bcaaca0ae238)
+
+
+         		
 ## RESULT:
 
 Thus the program has been executed successfully.
  
+ 
+
 
 # EX-23-ARRAYS AND ITS OPERATIONS
 
@@ -108,13 +128,21 @@ int main()
 ```
 
 
-## OUTPUT:
-![Screenshot 2025-04-27 153309](https://github.com/user-attachments/assets/5fb8bee3-56ed-4a02-97d2-f6bb9bee9137)
 
+## OUTPUT
+
+![image](https://github.com/user-attachments/assets/7522ca6f-4249-4a8f-a587-2f8b2740206b)
+
+
+
+
+ 
+ 
 
  ## RESULT
+ Thus the C program to String process executed successfully
+ 
 
-Thus the C program to String process executed successfully
 
 # EX-24-STRINGS
 
@@ -132,36 +160,52 @@ Write C program for the below pyramid string pattern. Enter a string: PROGRAM En
 
 ## PROGRAM:
 ```
-#include <stdio.h>
+ #include <stdio.h>
 #include <string.h>
 int main() {
     char str[100];
-    int num_rows, i, j, midpoint, len;
+    int i, j,len;
     scanf("%s", str);
-    scanf("%d", &num_rows);
     len = strlen(str);
-    midpoint = (2 * num_rows - 1) / 2;
-    for(i = 1; i <= num_rows; i++) {
-        for(j = 1; j <= num_rows - i; j++) {
+    int sp=10;
+    int k=0;
+    int y=0;
+     for(i = 1; i <=5; i++) {
+        for(int space=1; space<=sp; space++) {
             printf(" ");
         }
-        for(j = 0; j < len; j++) {
-            printf("%c ", str[j]);
+        for(j = 0; j <= y; j++) {
+            printf("%c", str[k]);
+            k++;
+            if (str[k]=='\0')
+                    k=0;
         }
         printf("\n");
+        sp-=1;
+        y+=2;
     }
-    return 0;
+    
+   
 }
+
 ```
 
- ## OUTPUT:
-![Screenshot 2025-04-27 153400](https://github.com/user-attachments/assets/33d53f4c-6251-4fbe-8091-08b4d3bacfbd)
+
+ ## OUTPUT
+
+![sss5](https://github.com/user-attachments/assets/df374647-05a6-4482-9217-40da6bbdf66f)
+
 
  
 
 ## RESULT
 
-Thus the C program to String process executed successfully.
+Thus the C program to String process executed successfully
+ 
+
+ 
+.
+
 
 
 # EX -25 –DISPLAYING ARRAYS USING POINTERS
@@ -210,9 +254,13 @@ int main() {
 }
 ```
 
-## OUTPUT:
-![Screenshot 2025-04-27 153500](https://github.com/user-attachments/assets/796a948f-7831-4981-90bb-77a091fcbf80)
+## OUTPUT
 
+
+![image](https://github.com/user-attachments/assets/b08b8cce-979d-4f57-b518-401f53a8d204)
+
+
+ 
 
 ## RESULT
 
